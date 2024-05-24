@@ -11,7 +11,6 @@ This repository contains a python implementation of a 3D Hybrid GAN, which integ
 - **Convolutional Blocks:** Essential convolution operations for the GAN, implemented in Python.
 - **GAN Structure:** The overall GAN architecture, including the use of a UNet within the generator, is implemented in C and Python.
 
-## Current Development
 
 
 
