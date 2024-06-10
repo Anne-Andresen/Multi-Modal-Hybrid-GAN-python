@@ -1,12 +1,17 @@
-# Python implementation of the Hybrid 3D GAN C and C++ Implementation
+# Python implementation of the Hybrid multi modal 3D GAN C and C++ Implementation
 
 ## Overview
 
-This repository contains a python implementation of a 3D Hybrid GAN, which integrates cross-attention, self-attention, and convolutional blocks in the generator with UNet architecture of a GAN. The self-attention, convolutional layers, and GAN structure, including a UNet architecture within the generator, are implemented in and Python.
+This repository contains a python implementation of a 3D Hybrid GAN, which integrates cross-attention, Multi-head-attention, and convolutional blocks in the generator with UNet architecture of a GAN. The self-attention, convolutional layers, and GAN structure, including a UNet architecture within the generator, are implemented in and Python.
+
+## Inputs
+This is a multi modality model which can take images and text input and give these as input to the model
+ - **Images:** 3D nifti images but can with minor corrections be adjusted to dicom files
+ - **Text:** Strings both one whole or two seperate string which are combined into one. 
 
 ## Features
 
-- **Self-Attention:** Integrated into the generator and implemented in Python.
+- **Multihead-Attention:** Integrated into the generator and implemented in Python.
 - **Cross-Attention Mechanism:** Designed for 3D tensors using PyTorch, applicable as input to CNN layers. This mechanism merges two separate input tensors, providing an output of the same size, which allows for multiple input images or the introduction of new data thorughout the network. Implemented in Python, can be foundin C and C++ in another repository
 - **Convolutional Blocks:** Essential convolution operations for the GAN, implemented in Python.
 - **GAN Structure:** The overall GAN architecture, including the use of a UNet within the generator, is implemented in C and Python.
