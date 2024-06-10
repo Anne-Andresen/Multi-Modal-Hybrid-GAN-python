@@ -43,7 +43,7 @@ This is a multi modality model which can take images and text input and give the
 
 - Python Implementation: Execute the Python script:
 ``` bash
-python3 Hybrid-GAN-python/train.py
+python3 Hybrid-GAN-python/new_Train.py
 
 
 ```
