@@ -18,8 +18,8 @@ GAN = GAN(G, D).to(device)
 
 # Define the loss function and optimizer
 criterion = nn.MSELoss()
-optimizerG = optim.Adam(G.parameters(), lr=0.0002)
-optimizerD = optim.Adam(D.parameters(), lr=0.0002)
+optimizerG = optim.Adam(G.parameters(), lr=0.00001)
+optimizerD = optim.Adam(D.parameters(), lr=0.00001)
 writer = SummaryWriter('runs')
 best_loss = float('inf')
 patience = 10
